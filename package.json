@@ -1,25 +1,30 @@
 {
-  "name": "movieql",
-  "version": "1.0.0",
-  "description": "API базы фильмов на GraphQL",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andreysdrv/movies-graphql.git"
-  },
-  "author": "jeck666@mail.ru",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/andreysdrv/movies-graphql/issues"
-  },
-  "homepage": "https://github.com/andreysdrv/movies-graphql#readme",
-  "dependencies": {
-    "graphql-yoga": "^3.1.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  }
+	"name": "movieql",
+	"version": "1.0.0",
+	"description": "API базы фильмов на GraphQL",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon --exec babel-node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/andreysdrv/movies-graphql.git"
+	},
+	"author": "jeck666@mail.ru",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/andreysdrv/movies-graphql/issues"
+	},
+	"homepage": "https://github.com/andreysdrv/movies-graphql#readme",
+	"dependencies": {
+		"@babel/cli": "^7.19.3",
+		"@babel/core": "^7.20.5",
+		"@babel/node": "^7.20.5",
+		"@babel/preset-env": "^7.20.2",
+		"graphql": "^16.6.0",
+		"graphql-yoga": "^3.1.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20"
+	}
 }
