@@ -3,7 +3,7 @@ import { createServer } from 'node:http'
 import { schema } from './graphql/schema'
 import { PORT } from './utils'
 
-const yoga = createYoga({ schema })
+const yoga = createYoga({ graphqlEndpoint: '/', schema })
 
 const server = createServer(yoga)
 

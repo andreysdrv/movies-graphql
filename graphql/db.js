@@ -11,9 +11,6 @@ export const getMovies = async (limit, rating) => {
 			data: { movies },
 		},
 	} = await axios(LIST_MOVIES_URL, {
-		headers: {
-			'User-Agent': 'axios 1.1.3',
-		},
 		params: {
 			limit,
 			minimum_rating: rating,
@@ -33,9 +30,6 @@ export const getMovieDetails = async (
 			data: { movie },
 		},
 	} = await axios(MOVIE_DETAILS_URL, {
-		headers: {
-			'User-Agent': 'axios 1.1.3',
-		},
 		params: {
 			movie_id: id,
 			with_images: withImage,
@@ -52,9 +46,6 @@ export const getMovieSuggestions = async id => {
 			data: { movies },
 		},
 	} = await axios(MOVIE_SUGGESTIONS_URL, {
-		headers: {
-			'User-Agent': 'axios 1.1.3',
-		},
 		params: {
 			movie_id: id,
 		},
